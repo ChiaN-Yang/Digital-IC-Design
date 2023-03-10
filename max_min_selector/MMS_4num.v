@@ -25,9 +25,9 @@ output reg [7:0] result0;
 always @(number00 or number01)
 begin
 if (select0)
-    result0 = (number00 > number01)? number00: number01;
-else
     result0 = (number00 < number01)? number00: number01;
+else
+    result0 = (number00 > number01)? number00: number01;
 end
 
 endmodule
